@@ -2,7 +2,7 @@
 
 Analysiere Meta (Facebook/Instagram) Werbeanzeigen mit KI. Finde Hooks, erstelle Beschreibungen und transkribiere Videos automatisch.
 
-[![Run on Replit](https://replit.com/badge/github/revomate/meta-ad-scraper)](https://replit.com/new/github/revomate/meta-ad-scraper)
+[![Run on Replit](https://replit.com/badge/github/flipdirmatze/revomate---Meta-Ad-Scraper)](https://replit.com/new/github/flipdirmatze/revomate---Meta-Ad-Scraper)
 
 ---
 
@@ -45,8 +45,8 @@ Falls du das Tool lokal ausführen möchtest:
 
 ```bash
 # Repository klonen
-git clone https://github.com/revomate/meta-ad-scraper.git
-cd meta-ad-scraper
+git clone https://github.com/flipdirmatze/revomate---Meta-Ad-Scraper.git
+cd revomate---Meta-Ad-Scraper
 
 # Dependencies installieren
 npm run install:all
@@ -92,7 +92,7 @@ Kosten: Kostenlos bis zu bestimmten Limits
 
 ## Support
 
-Fragen? Schreib mir auf [LinkedIn](https://linkedin.com/in/revomate) oder erstelle ein [Issue](https://github.com/revomate/meta-ad-scraper/issues).
+Fragen? Erstelle ein [Issue](https://github.com/flipdirmatze/revomate---Meta-Ad-Scraper/issues).
 
 ---
 
