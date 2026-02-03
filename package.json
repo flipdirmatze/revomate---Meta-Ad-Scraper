@@ -7,6 +7,7 @@
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
     "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start:replit": "npm run install:all && npm run dev",
     "build": "cd client && npm run build"
   },
   "keywords": ["meta", "facebook", "ads", "scraper", "apify", "gemini"],
