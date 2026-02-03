@@ -1,0 +1,15 @@
+{
+  "name": "meta-ad-scraper-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "axios": "^1.7.9",
+    "@google/generative-ai": "^0.21.0"
+  }
+}

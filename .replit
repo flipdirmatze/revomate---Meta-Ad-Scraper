@@ -1,0 +1,19 @@
+run = "npm run dev"
+entrypoint = "server/index.js"
+
+[env]
+PORT = "3001"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm run start"]
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+
+[[ports]]
+localPort = 3001
+externalPort = 3001

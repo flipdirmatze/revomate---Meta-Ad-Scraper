@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* revomate Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FAFAFA;
+  color: #0F172A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748B;
+}
+
+/* Loading Animation */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Input Focus Styles */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #0F172A;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.1);
+}
+
+/* Button Styles */
+.btn-revomate {
+  @apply bg-slate-900 text-white font-semibold py-4 px-6 rounded-btn hover:bg-slate-800 transition-colors;
+}
+
+.btn-revomate-secondary {
+  @apply bg-transparent border border-slate-200 text-slate-700 font-semibold py-4 px-6 rounded-btn hover:border-slate-800 hover:bg-slate-50 transition-colors;
+}
+
+/* Status Badge */
+.status-badge {
+  @apply inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-sm;
+}
+
+.status-dot {
+  @apply w-2 h-2 rounded-full bg-accent-emerald;
+}
+
+.status-dot-inactive {
+  @apply w-2 h-2 rounded-full bg-slate-400;
+}
