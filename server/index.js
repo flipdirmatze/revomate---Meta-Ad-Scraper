@@ -29,16 +29,19 @@ app.use(express.json({ limit: '50mb' }))
 app.use('/api/scrape', scrapeRoutes)
 app.use('/api/analyze', analyzeRoutes)
 
-// Health check - includes secrets status for frontend
+// Health check - includes secrets status for frontend (checks dynamically)
 app.get('/api/health', (req, res) => {
+  const apifyConfigured = !!process.env.APIFY_TOKEN
+  const geminiConfigured = !!process.env.GEMINI_API_KEY
+
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
     configured: {
-      apify: hasApifyToken,
-      gemini: hasGeminiKey,
+      apify: apifyConfigured,
+      gemini: geminiConfigured,
     },
-    ready: hasApifyToken && hasGeminiKey,
+    ready: apifyConfigured && geminiConfigured,
   })
 })
 
